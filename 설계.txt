@@ -1,0 +1,47 @@
+뱀겜
+
+게임 설정 화면
+인게임화면
+결과화면
+
+변수
+#define MAPSIZE 20
+
+int timecounter //시스템 시간 흐름
+int field[MAPSIZE][MAPSIZE] //맵
+int snake[MAPSIZE * MAPSIZE][2] //rows - 뱀 최대길이, cols - 몸통 마디마다 x와 y좌표, rows가 0이면 마디없고 1이면 마디있음
+
+int speed // 뱀이동속도1~10단계로 1에서 10배속 1000 ~ 100
+
+int score // 쥐 잡아먹은 마리수
+
+
+함수
+int getkey( ) //waitKey대용
+
+graphic( ) //그래픽처리
+
+mice( ) //땃쥐 랜덤 생성
+
+snakebody( ) //뱀 길이 및 좌표
+
+snakemove()
+
+void mouse_callback(int event, int x, int y, int flags, void*userdata) //마우스 클릭 이벤트
+
+
+코딩상 문제
+waitKey( ) 입력시 남은대기시간 스킵문제
+waitKey 대용 함수 재작 counter사용
+
+
+필요 그래픽
+뱀머리입다문거
+뱀머리입벌린거
+몸통 제일큰원
+꼬리1 큰원
+꼬리2 중간원
+꼬리3 작음원
+게임설정화면 버튼 좌
+게임설정화면 버튼 우
+
